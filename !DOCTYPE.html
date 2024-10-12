@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rosy Teacher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        input[type="submit"] {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to The Rosy Teacher</h1>
+
+    <!-- Password Protection Mock -->
+    <div id="password-protection">
+        <form>
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Once logged in, display this content -->
+    <div class="section" id="materials-section">
+        <h2>Lesson Materials</h2>
+        <ul>
+            <li><a href="lesson1.pdf" target="_blank">Lesson 1: Daily Routine</a></li>
+            <li><a href="lesson2.pdf" target="_blank">Lesson 2: Personality Traits</a></li>
+        </ul>
+        <!-- This would require a backend to upload files -->
+        <form>
+            <label for="upload">Upload New Material:</label>
+            <input type="file" id="upload" name="upload">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+
+    <div class="section" id="folders-section">
+        <h2>Create New Folder</h2>
+        <form>
+            <label for="folder-name">Folder Name:</label>
+            <input type="text" id="folder-name" name="folder-name">
+            <input type="submit" value="Create Folder">
+        </form>
+    </div>
+
+    <div class="section" id="tasks-section">
+        <h2>Tasks To Do</h2>
+        <ul>
+            <li>Review student homework</li>
+            <li>Plan next week’s lesson on past tenses</li>
+            <li>Upload new vocabulary sheets</li>
+        </ul>
+        <form>
+            <label for="new-task">Add New Task:</label>
+            <input type="text" id="new-task" name="new-task">
+            <input type="submit" value="Add Task">
+        </form>
+    </div>
+</body>
+</html>
